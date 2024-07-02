@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-function App() {
+import StartPage from './component/StartPage';
+import CitySelection from './component/CitySelection';
+import VehicleSelection from './component/VehicleSelection';
+import ResultPage from './component/ResultPage';
+import { BrowserRouter as Router ,Route, Routes } from 'react-router-dom';
+
+const  App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<StartPage />} />
+        <Route path="/city-selection" element={<CitySelection />} />
+        <Route path="/vehicle-selection" element={<VehicleSelection />} />
+        <Route path="/result" element={<ResultPage />} />  
+      </Routes>
+    </Router>
   );
 }
 

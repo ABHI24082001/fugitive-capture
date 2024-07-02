@@ -1,0 +1,15 @@
+/* src/components/styles/ResultPage.css */
+.result-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.result-page h1 {
+    margin-bottom: 20px;
+}
+
+.result-page p {
+    font-size: 1.5em;
+}

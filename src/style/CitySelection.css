@@ -1,0 +1,38 @@
+/* src/components/styles/CitySelection.css */
+.city-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.city-selection h1 {
+    margin-bottom: 20px;
+}
+
+.city-selection-item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.city-selection-item label {
+    margin-right: 10px;
+}
+
+.city-selection-item select {
+    margin-right: 10px;
+}
+
+.city-selection-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.city-selection button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
