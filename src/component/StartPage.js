@@ -3,6 +3,7 @@ import React from "react";
 import {  useNavigate } from "react-router-dom";
 import "../style/StartPage.css";
 
+
 const StartPage = () => {
   const navigate = useNavigate();
 

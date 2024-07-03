@@ -10,8 +10,8 @@ const ResultPage = () => {
   return (
     <div className="result-page">
       <h1>Capture Result</h1>
-      {result.captured ? (
-        <p>Fugitive captured by {result.copName}!</p>
+      {result.captureStatus === "Captured" ? (
+        <p>Fugitive captured by {result.capturingCop}!</p>
       ) : (
         <p>Fugitive not captured.</p>
       )}

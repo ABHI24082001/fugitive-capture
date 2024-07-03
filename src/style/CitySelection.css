@@ -4,24 +4,45 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    height: 100vh;
+    background-image: url('https://media.istockphoto.com/id/1325074732/photo/3d-render-illustration-of-sci-fi-first-person-shooter-game-with-soldier-hands-holding.jpg?s=2048x2048&w=is&k=20&c=rsPj_O5-O9mzOf9mIYB0ZTexBxWTyKtyWCR7AaV8wh0=');
+    background-size: cover;
+    background-position: center;
 }
 
 .city-selection h1 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    /* Increase font size */
+    color: white;
+    /* Optional: Change color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Optional: Add shadow for better readability */
 }
 
 .city-selection-item {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
+    font-size: 1.2em;
+    /* Increase font size */
 }
 
 .city-selection-item label {
     margin-right: 10px;
+    font-size: 1.2em;
+    /* Increase font size */
+    color: white;
+    /* Optional: Change color */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    /* Optional: Add shadow for better readability */
 }
 
 .city-selection-item select {
     margin-right: 10px;
+    font-size: 1.2em;
+    /* Increase font size */
+    padding: 5px;
 }
 
 .city-selection-item img {
@@ -33,6 +54,15 @@
 
 .city-selection button {
     padding: 10px 20px;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    /* Increase font size */
     cursor: pointer;
+    background-color: #4CAF50;
+    /* Optional: Change background color */
+    color: white;
+    /* Optional: Change text color */
+    border: none;
+    /* Optional: Remove border */
+    border-radius: 5px;
+    /* Optional: Add border radius */
 }

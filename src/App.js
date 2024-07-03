@@ -1,5 +1,4 @@
 import React from 'react';
-
 import StartPage from './component/StartPage';
 import CitySelection from './component/CitySelection';
 import VehicleSelection from './component/VehicleSelection';

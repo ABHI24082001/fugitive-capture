@@ -4,11 +4,36 @@ import { useNavigate } from "react-router-dom";
 import "../style/CitySelection.css";
 
 const cities = [
-  { name: "Yapkashnagar", distance: 60, image: "yapkashnagar.jpg" },
-  { name: "Lihaspur", distance: 50, image: "lihaspur.jpg" },
-  { name: "Narmis City", distance: 40, image: "yapkashnagar.jpg" },
-  { name: "Shekharvati", distance: 30, image: "yapkashnagar.jpg" },
-  { name: "Nuravgram", distance: 20, image: "yapkashnagar.jpg" },
+  {
+    name: "Yapkashnagar",
+    distance: 60,
+    image:
+      "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    name: "Lihaspur",
+    distance: 50,
+    image:
+      "https://images.unsplash.com/photo-1496871455396-14e56815f1f4?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    name: "Narmis City",
+    distance: 40,
+    image:
+      "https://images.unsplash.com/photo-1503642551022-c011aafb3c88?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    name: "Shekharvati",
+    distance: 30,
+    image:
+      "https://images.unsplash.com/photo-1417632993443-302f4897cf67?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    name: "Nuravgram",
+    distance: 20,
+    image:
+      "https://images.unsplash.com/photo-1517462035531-76bc910a6903?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
 ];
 
 const CitySelection = () => {
@@ -41,9 +66,7 @@ const CitySelection = () => {
           </select>
           {selection && (
             <img
-              src={`/images/${
-                cities.find((city) => city.name === selection).image
-              }`}
+              src={cities.find((city) => city.name === selection).image}
               alt={selection}
             />
           )}
