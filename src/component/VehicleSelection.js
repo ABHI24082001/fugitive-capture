@@ -28,6 +28,10 @@ const vehicles = [
 ];
 
 const VehicleSelection = () => {
+
+
+
+  
   const { state } = useLocation();
   const { copSelections } = state;
   const [vehicleSelections, setVehicleSelections] = useState(Array(3).fill(""));
