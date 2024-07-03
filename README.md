@@ -1,3 +1,156 @@
+
+# Fugitive Capture Game
+
+## Overview
+A notorious criminal escape artist has vanished again. The criminal may be hiding in one of the 5 neighboring cities. 3 fearless cops are trying to capture the fugitive, and they need your help!
+
+## Technologies
+- **Frontend**: Choose between Vue, React, or Angular
+- **Backend**: Node.js
+
+## Gameplay
+- **City Selection**: Each cop chooses one city to investigate.
+- **Vehicle Selection**: Each cop selects an electric vehicle based on the chosen city's distance.
+- **Result**: The system determines if any cop successfully captures the fugitive.
+
+## Technical Requirements
+### Frontend
+- Develop screens for:
+  - Start/Landing page
+  - Selection of city for each cop
+  - Selection of vehicle options for each cop
+  - Result page indicating the capture status and capturing cop's name (if successful)
+
+### Backend (Node.js)
+- Use correct data structures to store city names, distances, and vehicle properties (range, count).
+- Simulate the fugitive's location in one of the cities (randomly).
+- Based on cop choices and simulated location, determine if any cop successfully captured the fugitive.
+
+## Assumptions
+- Vehicle must have enough range for a round trip.
+- City selections must be unique for each cop.
+- In-memory data structures are used for simplicity.
+- No authentication or authorization is required.
+
+## Build Steps
+1. Clone the repository.
+2. Run `npm install` to install dependencies.
+3. Run `npm start` to start the server.
+4. Use Postman to test the API at `http://localhost:8000/api/check-capture`.
+
+## Deployment
+The app must be deployed online using a free service such as Netlify.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
