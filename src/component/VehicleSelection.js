@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import axios from "axios";
+import axiosInstance from '../axiosConfig'
 import "../style/VehicleSelection.css";
 
 const vehicles = [
@@ -43,23 +43,22 @@ const VehicleSelection = () => {
     setVehicleSelections(newSelections);
   };
 
-  const handleSubmit = async () => {
-    try {
-      const cops = copSelections.map((cop, index) => ({
-        name: cop,
-        city: copSelections[index],
-        vehicle: vehicleSelections[index],
-      }));
+    const handleSubmit = async () => {
+      try {
+        const cops = copSelections.map((cop, index) => ({
+          name: cop,
+          city: copSelections[index],
+          vehicle: vehicleSelections[index],
+        }));
 
-      const response = await axios.post("/api/v1/capture/check-capture", {
-        cops,
-      });
-      navigate("/result", { state: { result: response.data } });
-    } catch (error) {
-      console.error("There was an error making the request:", error);
-    }
-  };
-
+        const response = await axiosInstance.post("/capture/check-capture", {
+          cops,
+        }); // Using axiosInstance with base URL
+        navigate("/result", { state: { result: response.data } });
+      } catch (error) {
+        console.error("There was an error making the request:", error);
+      }
+    };
   return (
     <div className="vehicle-selection">
       <h1>Select Vehicle for Each Cop</h1>
